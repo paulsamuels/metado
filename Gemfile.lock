@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    metado (0.1.0)
+    metado (0.1.1)
       tomlrb
 
 GEM
@@ -39,6 +39,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
+  x86_64-darwin-20
 
 DEPENDENCIES
   metado!

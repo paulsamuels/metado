@@ -11,7 +11,7 @@ module Metado
         exit 1
       end
 
-      result = Dir["#{dir}/**/*"].flat_map do |file|
+      result = Dir["#{dir}/**/*.{c,hs,js,m,md,mm,py,rb,sh,swift}"].flat_map do |file|
         next unless File.file?(file)
 
         Parser::File.comments(file).map(&Parser::Metado.method(:parse)).flatten.map(&:to_h)
